@@ -1,0 +1,496 @@
+body {
+    background-color: #121212;
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 10px;
+
+}
+h1 {
+    color: #e2a114;
+    text-align: center;
+}
+
+
+main h2{
+    text-align: center;
+}
+
+
+
+h2 {
+    color: #e2a114;
+}
+
+
+main p {
+    text-align: center;
+}
+
+
+
+
+
+
+input[type='radio'] {
+    display: none;
+
+}
+
+label {
+
+    padding: 10px 20px;
+    background: darkgoldenrod;
+    color: #121212;
+    margin-right: 7.0px;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+
+
+    
+    
+}
+
+
+#skills_tab:checked + label[for='skills_tab'],
+
+#certifications_tab:checked + label[for='certifications_tab'],
+
+#projects_tab:checked + label[for='projects_tab'],
+
+#experience_tab:checked + label[for='experience_tab'],
+
+#education_tab:checked + label[for='education_tab'],
+
+#website_tab:checked + label[for='website_tab'],
+
+#tools_technologies_tab:checked + label[for='tools_technologies_tab'],
+
+#contact_availability_tab:checked + label[for='contact_availability_tab'],
+
+#about_me_tab:checked + label[for='about_me_tab'] {
+
+    background: #121212;
+    color: darkgoldenrod;
+    border: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid darkgoldenrod;
+
+}
+
+
+
+
+section {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: -1px;
+    
+
+}
+
+
+
+#skills_tab:checked ~ #skills_section,
+
+#certifications_tab:checked ~ #certifications_section,
+
+#projects_tab:checked ~ #projects_section,
+
+#experience_tab:checked ~ #experience_section,
+
+#education_tab:checked ~ #education_section, 
+
+#website_tab:checked ~ #myweb_section,
+
+#tools_technologies_tab:checked ~ #tools_Technologies_section,
+
+#contact_availability_tab:checked ~ #Contact_Availability_section,
+
+#about_me_tab:checked ~ #about_me_section {
+
+    display: block;
+}
+
+
+
+
+
+ul {
+    text-align: center;
+    list-style: none;
+}
+
+ul button {
+    background-color: #d9a115;
+    border: 2px solid #000000 ;
+}
+
+ul button:hover {
+    background-color: #ff9292;
+    border: 2px solid #ff9292 ;
+}
+
+
+
+blockquote {
+  background: #202020;
+  border-left: 5px solid #69b6e2;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-style: italic;
+
+  text-align: center;
+}
+
+
+
+/* Base styles */
+.modern-details {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 0.8rem;
+  margin: 1rem 0;
+  background: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: background 0.3s ease;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .modern-details {
+    background: #1e1e1e;
+    color: #e0e0e0;
+    border-color: #444;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  }
+}
+
+/* Summary styling */
+.modern-details summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+/* Arrow indicator */
+.modern-details summary::after {
+  content: "▼";
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+  margin-left: 8px;
+}
+
+/* Rotate arrow on open */
+.modern-details[open] summary::after {
+  transform: rotate(-180deg);
+}
+
+/* Fieldset content styling */
+.modern-details fieldset {
+  border: none;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.modern-details p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+/* ############################################################# */
+
+
+
+
+
+
+/* Base styles */
+.personal_info {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 0.8rem;
+  margin: 0.2rem 0;
+  background: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: background 0.3s ease;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .personal_info {
+    background: darkgrey;
+    color: #000000;
+    border-color: #444;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  }
+}
+
+
+
+/* ############################################ */
+
+/* Base styles */
+.modern-details2 {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 0.8rem;
+  margin: 0.2rem 0;
+  background: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: background 0.3s ease;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 800px;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .modern-details2 {
+    background: #1e1e1e;
+    color: #e0e0e0;
+    border-color: #444;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  }
+}
+
+
+
+/* ############################################################# */
+
+
+
+#cert_ul {
+    list-style: disc;
+    width: 700px;
+    text-align: left;
+}
+
+
+/* ╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫╫ */
+
+
+
+.text_hover_color:hover {
+  color: darkgoldenrod;
+  filter: brightness(150%);
+}
+
+
+
+
+.show_credential_button{
+  background-color: darkgray;
+  color: rgb(0, 0, 0);
+  width: 150px;
+  height: 31px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.show_credential_button:hover{
+  background-color: rgb(252, 131, 131);
+  color: rgb(30, 25, 20);
+  width: 150px;
+  height: 31px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+
+
+
+/* .cert_link {
+  color: darkgoldenrod;
+  text-decoration: none;
+} */
+
+
+
+
+
+
+
+
+
+
+
+body {
+  background: #121212; /* Dark background */
+  color: #e0e0e0; /* Light gray text */
+  font-family: Arial, sans-serif;
+}
+
+.project-md {
+  background: #1e1e1e; /* Dark card background */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  line-height: 1.6;
+  font-size: 15px;
+  margin: 20px 0;
+}
+
+.project-md h3 {
+  font-size: 22px;
+  color: #69b6e2; /* Blue highlight (matches your Python Codex theme) */
+  margin-bottom: 10px;
+}
+
+.project-md h4 {
+  margin-top: 20px;
+  color: #f1f1f1;
+  font-size: 18px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 4px;
+}
+
+.project-md h5 {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.project-md ul {
+  margin-left: 20px;
+}
+
+.project-md table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+  background: #222; /* Darker table */
+  color: #ddd;
+}
+
+.project-md th, .project-md td {
+  border: 1px solid #333;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.project-md th {
+  background: #2a2a2a;
+  font-weight: bold;
+  color: #69b6e2;
+}
+
+.project-md tr:nth-child(even) td {
+  background: #1a1a1a;
+}
+
+.project-md hr {
+  margin: 25px 0;
+  border: none;
+  border-top: 1px dashed #444;
+}
+
+
+
+
+
+
+
+
+
+.blockquote2 {
+  background: #202020;
+  border-left: 5px solid #f77e5d;
+  margin: 1rem 0;
+  padding: 1rem;
+
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+#challenges_section {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+#challenges_section h4 {
+  color: #69b6e2;
+  font-size: 18px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+}
+
+.challenges-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #ddd;
+  text-align: left;
+}
+
+.challenges-table th, .challenges-table td {
+  border: 1px solid #333;
+  padding: 10px 12px;
+}
+
+.challenges-table th {
+  background: #2a2a2a;
+  color: #69b6e2;
+  font-weight: bold;
+}
+
+.challenges-table tr:nth-child(even) td {
+  background: #1a1a1a;
+}
+
+.challenges-table td {
+  vertical-align: top;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#education_section h2 {
+  color: #69b6e2;
+  font-size: 20px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+#education_section ul.education-list {
+  list-style: none;
+  padding-left: 0;
+  color: #ddd;
+}
+
+#education_section li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
